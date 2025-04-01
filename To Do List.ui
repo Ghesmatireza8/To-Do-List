@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>740</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>740</width>
+    <height>580</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>740</width>
+    <height>580</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>To Do List</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/pics/check (1).png</normalon>
+   </iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-90</x>
+      <y>0</y>
+      <width>831</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>412</width>
+         <height>579</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <widget class="QPushButton" name="add_task_bt">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>80</y>
+          <width>250</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 136, 126, 255), stop:0.79056 rgba(83, 94, 101, 255));
+	border-radius: 5px;
+}
+
+QPushButton:hover{
+	border: 3px solid rgb(62, 70, 75);
+}
+
+QPushButton:focus{
+	border: 3px solid rgb(62, 70, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Add Task To List</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="task_le">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>20</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 5px;
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(62, 70, 75);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(62, 70, 75);
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Type Your Task ...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="remove_task_bt">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>140</y>
+          <width>250</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 136, 126, 255), stop:0.79056 rgba(83, 94, 101, 255));
+	border-radius: 5px;
+}
+
+QPushButton:hover{
+	border: 3px solid rgb(62, 70, 75);
+}
+
+QPushButton:focus{
+	border: 3px solid rgb(62, 70, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Remove Sleceted Task</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="done_bt">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>200</y>
+          <width>250</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 136, 126, 255), stop:0.79056 rgba(83, 94, 101, 255));
+	border-radius: 5px;
+}
+
+QPushButton:hover{
+	border: 3px solid rgb(62, 70, 75);
+}
+
+QPushButton:focus{
+	border: 3px solid rgb(62, 70, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Set Done For Sleceted Task</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="notdone_bt">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>260</y>
+          <width>250</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 136, 126, 255), stop:0.79056 rgba(83, 94, 101, 255));
+	border-radius: 5px;
+}
+
+QPushButton:hover{
+	border: 3px solid rgb(62, 70, 75);
+}
+
+QPushButton:focus{
+	border: 3px solid rgb(62, 70, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Set Not Done For Sleceted Task</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="save_db_bt">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>320</y>
+          <width>250</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 136, 126, 255), stop:0.79056 rgba(83, 94, 101, 255));
+	border-radius: 5px;
+}
+
+QPushButton:hover{
+	border: 3px solid rgb(62, 70, 75);
+}
+
+QPushButton:focus{
+	border: 3px solid rgb(62, 70, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Save To Database</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="clear_list_bt">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>390</y>
+          <width>250</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color: rgb(227, 12, 5);
+	border-radius: 5px;
+}
+
+QPushButton:hover{
+	border: 3px solid rgb(115, 0, 0);
+}
+
+QPushButton:focus{
+	border: 3px solid rgb(115, 0, 0);
+}</string>
+        </property>
+        <property name="text">
+         <string>Clear List</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	border-image: url(:/pics/trac-vu-aMnMaT7DJGs (2).jpg);
+}</string>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>351</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	background-color: rgba(0,0,0,100);
+	border-image: url(:/pics/alarm 2.png);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>Your Tasks Is Here:</string>
+        </property>
+        <property name="margin">
+         <number>15</number>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="listWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>350</width>
+          <height>450</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>350</width>
+          <height>450</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>450</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget{
+	color: rgb(255, 255, 255);
+	background-color: rgba(0,0,0,120);
+	border-image: url(:/pics/alarm 2.png);
+	border-radius: 20px;
+}</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
